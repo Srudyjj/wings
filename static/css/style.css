@@ -70,6 +70,11 @@
 
     .menu-items>li>a:hover{
         color:#1485cc;
+        background-color: transparent;
+    }
+
+    .menu-items:first-child a{
+        padding-left: 0;
     }
 
     .slider{
