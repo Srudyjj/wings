@@ -217,6 +217,24 @@
     text-transform: uppercase;
 }
 
+.main-btm:focus {
+    outline: none;
+}
+
+.main-btm:active:focus {
+    outline: none;
+}
+
+.slider-wrapper{
+    z-index: 1;
+    width: 1400px;
+    height: 821px;
+    position: absolute;
+    top: 0;
+    background-color: #143bcc;
+    opacity: 0.35;
+}
+
 .rectangle:before{
     right: 50%;
     top:240px;
