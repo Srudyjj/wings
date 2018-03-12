@@ -35,6 +35,13 @@
 
 
 /* My styles */
+
+    a:focus {
+        outline:none;
+        text-decoration: none;
+    }
+
+
     .menu{
         border:none;
         height: 100px;
@@ -136,33 +143,36 @@
 
 
 
-.main-btm{
-    width: 300px;
-    height: 60px;
-    box-shadow: 0 10px 19px rgba(0, 0, 40, 0.1);
-    background-color: #62d5ff;
-    border-radius: 30px;
-    margin-top: 495px;
-}
 
-.main-btm-label{
-    text-align: center;
-    color: #ffffff;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 50px;
-    text-transform: uppercase;
-}
 
 .phone{
     position: relative;
     margin-top: 56px;
     height: 70px;
     margin-bottom: 19px;
+    text-align: center;
+}
+
+.phone-number{
+    display: inline-block;
+    color: #ffffff;
+    font-family: "Roboto, sans-serif;";
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.phone-number:hover {
+    color: #62d5ff;
+    text-decoration: none;
 }
 
 
+.under-phone:hover {
+    color: #62d5ff;
+}
 
 .under-phone{
     margin-top: 20px;
@@ -190,27 +200,22 @@
     background: url(../images/arrowup.png)
 }
 
-.phone-number{
+.main-btm{
+    float:none; 
+    width: 300px;
+    height: 60px;
+    box-shadow: 0 10px 19px rgba(0, 0, 40, 0.1);
+    background-color: #62d5ff;
+    border-radius: 30px;
+    margin-top: 495px;
+    text-align: center;
     color: #ffffff;
-    font-family: "Roboto, sans-serif;";
-    font-size: 22px;
-    font-weight: 900;
-    line-height: 18px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 50px;
     text-transform: uppercase;
-    text-decoration: none;
-    width: 180px;
 }
-
-.phone-number:hover {
-    text-decoration: none;
-}
-
-a:focus {
-    outline:none;
-    text-decoration: none;
-}
-
-
 
 .rectangle:before{
     right: 50%;
