@@ -3,22 +3,22 @@
 
     @font-face {
     font-family: 'rupster_script_freeregular';
-    src: url('10859-webfont.eot');
-    src: url('10859-webfont.eot?#iefix') format('embedded-opentype'),
-         url('10859-webfont.woff2') format('woff2'),
-         url('10859-webfont.woff') format('woff'),
-         url('10859-webfont.ttf') format('truetype');
+    src: url('../fonts/rupster/10859-webfont.eot');
+    src: url('../fonts/rupster/10859-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rupster/10859-webfont.woff2') format('woff2'),
+         url('../fonts/rupster/10859-webfont.woff') format('woff'),
+         url('../fonts/rupster/10859-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
 
     @font-face {
     font-family: 'Impact';
-    src: url('subset-Impact.eot');
-    src: url('subset-Impact.eot?#iefix') format('embedded-opentype'),
-        url('subset-Impact.woff2') format('woff2'),
-        url('subset-Impact.woff') format('woff'),
-        url('subset-Impact.ttf') format('truetype');
+    src: url('../fonts/impact/subset-Impact.eot');
+    src: url('../fonts/impact/subset-Impact.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/impact/subset-Impact.woff2') format('woff2'),
+        url('../fonts/impact/subset-Impact.woff') format('woff'),
+        url('../fonts/impact/subset-Impact.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
@@ -36,10 +36,10 @@
 
 /* My styles */
 
-    a:focus {
+    /* a:focus {
         outline:none;
         text-decoration: none;
-    }
+    } */
 
 
     .menu{
@@ -47,6 +47,13 @@
         height: 100px;
         border-radius: 0;
         margin-bottom: 0;
+        z-index: 10;
+        background-color: white;
+    }
+
+
+    #myNavbar{
+        background-color: white;
     }
 
     .icon-bar{
@@ -141,10 +148,6 @@
  
 }
 
-
-
-
-
 .phone{
     position: relative;
     margin-top: 56px;
@@ -226,7 +229,6 @@
 }
 
 .slider-wrapper{
-    z-index: 1;
     width: 1400px;
     height: 821px;
     position: absolute;
@@ -262,3 +264,129 @@
     z-index: 2;
     transform: rotate(-24deg);
 }
+
+.philosophy h2{
+    position: relative;
+    margin-top: 132px;
+    color: #1485cc;
+    font-family: "rupster_script_freeregular";
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 95px;
+}
+
+.philosophy h2:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1500px;
+    height: 1500px;
+    transform: rotate(45deg);
+    background-image: linear-gradient(to bottom right, white 0%, #f6f9fb 100%);
+    bottom: -100px;
+    left: 50%;
+    margin-left: -750px;
+    z-index: -1;
+
+
+}
+
+.philosophy h2:after{
+    position: absolute;
+    content: "ФИЛОСОФИЯ";
+    display: block;
+    color: #f3f7fa;
+    font-family: "Roboto - Black";
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 100px;
+    width: 650px;
+    text-transform: uppercase;
+    z-index: -1;
+    top: 50%;
+    margin-top: -50px;
+    left: 50%;
+    margin-left: -325px;
+    
+}
+
+
+
+
+
+.philosophy h3{
+    color: #1485cc;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.philosophy p{
+    color: #4f4f4f;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 10px;
+    
+}
+
+
+.legend{
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    z-index: 1;
+    padding-left: 130px;
+    box-shadow: 0 10px 19px rgba(0, 0, 40, 0.1);
+}
+
+.legend:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -53px;
+    left: 10px;
+    width: 106px;
+    height: 88px;
+    background-color: tomato;
+}
+
+
+
+/* //////////////////////////////////////// */
+
+@media screen and (min-width: 993px) {
+    .philosophy-row{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+    .legend:before{
+    content: "";
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -53px;
+    left: 10px;
+    width: 106px;
+    height: 88px;
+    background-color: tomato;
+    }
+
+}
+
+.philosophy-row img{
+    padding: 0;
+}
+
+/* /////////////////////////////////////////// */
