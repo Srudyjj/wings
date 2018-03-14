@@ -265,7 +265,7 @@
     transform: rotate(-24deg);
 }
 
-.philosophy h2{
+.subhead{
     position: relative;
     margin-top: 132px;
     color: #1485cc;
@@ -276,23 +276,9 @@
     margin-bottom: 95px;
 }
 
-.philosophy h2:before{
-    position: absolute;
-    content: "";
-    display: block;
-    width: 1500px;
-    height: 1500px;
-    transform: rotate(45deg);
-    background-image: linear-gradient(to bottom right, white 0%, #f6f9fb 100%);
-    bottom: -100px;
-    left: 50%;
-    margin-left: -750px;
-    z-index: -1;
 
 
-}
-
-.philosophy h2:after{
+.subhead:after{
     position: absolute;
     content: "ФИЛОСОФИЯ";
     display: block;
@@ -311,9 +297,25 @@
     
 }
 
+.philosophy{
+    position: relative;
+}
+
+.philosophy:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1500px;
+    height: 1500px;
+    transform: rotate(45deg);
+    background-image: linear-gradient(to bottom right, white 0%, #f6f9fb 100%);
+    top: -1350px;
+    left: 50%;
+    margin-left: -750px;
+    z-index: -1;
 
 
-
+}
 
 .philosophy h3{
     color: #1485cc;
@@ -357,6 +359,73 @@
 }
 
 
+#subhead_2:after{
+    content: "мероприятия";
+    width: 720px;
+    margin-left: -360px;
+}
+
+.event{
+    position: relative;
+    width: 280px;
+    margin-bottom: 44px;
+}
+
+.event:before{
+
+    content: "";
+    display: block;
+    border-left: 159px solid #1485cc;
+    border-top: 92px solid transparent;
+    border-bottom: 92px solid transparent;
+}
+
+#teambuilding:before{
+    border-left: 159px solid #f3f7fa;
+}
+
+.event:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 44px;
+    background-color: tomato;
+    top: 50%;
+    margin-top: -22px;
+    left: 23px;
+
+
+    
+}
+
+
+.event p{
+    position: absolute;
+    color: #1485cc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    text-transform: uppercase;
+    padding-left: 60px;
+    margin-left: 50px;
+    bottom: 0;
+}
+
+.event p:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 44px;
+    background-color: tomato;
+    top: -13px;
+    left: 0;
+    
+}
+
+
 
 /* //////////////////////////////////////// */
 
@@ -372,15 +441,10 @@
 
 @media screen and (max-width: 450px) {
     .legend:before{
-    content: "";
     display: none;
-    position: absolute;
-    top: 50%;
-    margin-top: -53px;
-    left: 10px;
-    width: 106px;
-    height: 88px;
-    background-color: tomato;
+    }
+    #subhead_2:after{
+    display: none;
     }
 
 }
