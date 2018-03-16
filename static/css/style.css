@@ -274,26 +274,25 @@
     font-weight: 400;
     text-align: center;
     margin-bottom: 95px;
+    z-index: 5;
 }
 
 
 
-.subhead:after{
+.subhead span{
     position: absolute;
-    content: "ФИЛОСОФИЯ";
     display: block;
     color: #f3f7fa;
     font-family: "Roboto - Black";
     font-size: 100px;
     font-weight: 400;
     line-height: 100px;
-    width: 650px;
     text-transform: uppercase;
     z-index: -1;
     top: 50%;
-    margin-top: -50px;
     left: 50%;
-    margin-left: -325px;
+    transform: translate(-50%, -50%);
+    
     
 }
 
@@ -359,12 +358,6 @@
 }
 
 
-#subhead_2:after{
-    content: "мероприятия";
-    width: 720px;
-    margin-left: -360px;
-}
-
 .event{
     position: relative;
     /* width: 280px; */
@@ -395,8 +388,6 @@
     margin-top: -22px;
     left: 23px;
 
-
-    
 }
 
 
@@ -428,10 +419,10 @@
 .details{
     position: relative;
     background-color: rgba(20, 133, 204, 0.6);
-    z-index: -1;
+    min-height: 1170px;
+    z-index: 1;
 
 }
-
 
 .details:before{
     content: "";
@@ -441,7 +432,6 @@
     position: absolute;
     bottom: 0;
     background-image: linear-gradient(to top right, white 0%, white 50%,transparent 50%,transparent 100%);
-    z-index: -1;
 }
 
 .details:after{
@@ -452,39 +442,57 @@
     position: absolute;
     top: 0;
     background-image: linear-gradient(to bottom right, white 0%, white 50%,transparent 50%,transparent 100%);
-    z-index: -1;
 }
 
-#subhead_3:after{
-    content: "";
-    display: none;
+
+.details form{
+    position: relative;
+    margin-top: 50%;
+    z-index: 2;
+    max-width: 1000px;
+    transform: translate(0, -50%);
+}
+
+.details form .input-group-btn{
+    right: 30px;
+    position: absolute;
+    
+}
+
+.details form .input-group-btn button{
+    position: absolute;
+    top: 5px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.details form .input-group-btn span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 0px;
+    vertical-align: middle;
+    border-top: 7px solid white;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
 }
 
 .details input[type=text] {
     border: none;
     border-bottom: 2px solid red;
-    color: black;
-    /*color: #ffffff;*/
+    color: #ffffff;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
-}
-
-.details input[type=text] {
-    border: none;
-    border-bottom: 2px solid red;
-    color: black;
-    /*color: #ffffff;*/
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
+    background-color: transparent;
+    margin-top: 20px;
 }
 
 .details input::placeholder {
     color: black;
-    /*color: #ffffff;*/
+    color: #ffffff;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
@@ -494,6 +502,7 @@
 
 .details .main-btm{
     margin-top: 20px;
+    
     
 
 }
@@ -519,10 +528,9 @@
     .legend:before{
     display: none;
     }
-    #subhead_2:after{
-    content: "";
+    .subhead span{
+        display: none;       
     }
-
 }
 
 .philosophy-row img{
