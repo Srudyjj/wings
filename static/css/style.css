@@ -204,7 +204,7 @@
 }
 
 .main-btm{
-    float:none; 
+    float:none !important; 
     width: 300px;
     height: 60px;
     box-shadow: 0 10px 19px rgba(0, 0, 40, 0.1);
@@ -447,10 +447,9 @@
 
 .details form{
     position: relative;
-    margin-top: 50%;
+    margin-top: 470px;
     z-index: 2;
     max-width: 1000px;
-    transform: translate(0, -50%);
 }
 
 .details form .input-group-btn{
