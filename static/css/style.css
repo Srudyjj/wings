@@ -140,7 +140,7 @@
 
 .section-md{
     position: relative;
-    background-color: thistle;
+    background-color:rgba(20, 133, 204, 0.6);
 }
 
 .main-logo{
@@ -204,7 +204,7 @@
 }
 
 .main-btm{
-    float:none !important; 
+    float: none !important; 
     width: 300px;
     height: 60px;
     box-shadow: 0 10px 19px rgba(0, 0, 40, 0.1);
@@ -218,6 +218,7 @@
     font-weight: 500;
     line-height: 50px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .main-btm:focus {
@@ -267,7 +268,7 @@
 
 .subhead{
     position: relative;
-    margin-top: 132px;
+    margin-top: 100px;
     color: #1485cc;
     font-family: "rupster_script_freeregular";
     font-size: 40px;
@@ -334,6 +335,9 @@
     
 }
 
+.philosophy-row img{
+    padding: 0;
+}
 
 .legend{
     position: relative;
@@ -447,50 +451,64 @@
 
 .details form{
     position: relative;
-    margin-top: 470px;
+    margin-top: 400px;
     z-index: 2;
     max-width: 1000px;
 }
 
-.details form .input-group-btn{
-    right: 30px;
-    position: absolute;
-    
-}
-
-.details form .input-group-btn button{
-    position: absolute;
-    top: 5px;
-    background-color: transparent;
-    box-shadow: none;
+.details form>div>select{
+    width: 100%;
     border: none;
-}
-
-.details form .input-group-btn span{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin-left: 0px;
-    vertical-align: middle;
-    border-top: 7px solid white;
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
-}
-
-.details input[type=text] {
-    border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid white;
     color: #ffffff;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
     background-color: transparent;
-    margin-top: 20px;
+    height: 25px;
+    margin-top: 10px;
+    text-transform: uppercase;
 }
 
-.details input::placeholder {
-    color: black;
+.details form>div>select:focus, input:focus, .details form>div option:focus{
+    outline-color:  rgb(20, 133, 204);
+}
+
+.details form>div option{
+    width: 100%;
+    background-color: rgba(20, 133, 204, 0.6);
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+
+.details form>div input{
+    border: none;
+    border-bottom: 2px solid white;
+    height: 25px;
+    margin-top: 10px;
+
+}
+
+.details form>div input[type=text] {
+    
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    background-color: transparent;
+    width: 100%;
+    
+}
+
+.details form>div input::placeholder {
     color: #ffffff;
     font-family: Roboto;
     font-size: 16px;
@@ -532,8 +550,18 @@
     }
 }
 
-.philosophy-row img{
-    padding: 0;
+@media screen and (max-width: 1050px){
+    .details{
+        min-height: initial;
+    background-image: linear-gradient(to top,rgba(20, 133, 204, 0.6), white);
+   }
+
+
+    .details:before, .details:after{
+        display: none;
+    }
 }
+
+
 
 /* /////////////////////////////////////////// */
