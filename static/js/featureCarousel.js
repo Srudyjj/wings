@@ -1,13 +1,3 @@
-/*!
- * Feature Carousel, Version 1.3
- * http://www.bkosolutions.com
- *
- * Copyright 2011 Brian Osborne
- * Licensed under GPL version 3
- * brian@bkosborne.com
- *
- * http://www.gnu.org/licenses/gpl.txt
- */
 (function($) {
 
   $.fn.featureCarousel = function (options) {
@@ -34,7 +24,7 @@
       largeFeatureHeight:   0,
       smallFeatureWidth:    0,
       smallFeatureHeight:   0,
-      totalFeatureCount:    $(this).children("div").length,
+      totalFeatureCount:    $(this).children("div.carousel-feature").length,
       currentlyMoving:      false,
       featuresContainer:    $(this),
       featuresArray:        [],

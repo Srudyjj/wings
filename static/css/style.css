@@ -533,15 +533,16 @@
 .carousel-container {
   position:relative;
   width:960px;
+  margin-bottom: 250px;
 }
 #carousel {
   height:280px;
   width:960px;
-  background-color:#CCC;
   position:relative;
   margin-bottom:0.5em;
   font-size:12px;
   font-family: Arial;
+  
 }
 .carousel-image {
   border:0;
@@ -551,71 +552,58 @@
   position:absolute;
   top:-1000px;
   left:-1000px;
-  border:2px solid #5d5d5d;
   cursor:pointer;
+  box-shadow:  0 10px 19px rgba(0, 0, 40, 0.1);
 }
+
 .carousel-feature .carousel-caption {
   position:absolute;
-  bottom:0;
-  width:100%;
-  background-color:#000;
+  bottom: -180px;
+  left: -310px;
+  text-align: left;
 }
+.carousel-feature .carousel-caption h3{
+  
+  color: #1485cc;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
 .carousel-feature .carousel-caption p {
   margin:0;
   padding:5px;
-  font-weight:bold;
-  font-size:12px;
-  color:white;
+  color: #4f4f4f;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+  font-style: italic;
 }
-.tracker-summation-container {
-  position:absolute;
-  color:white;
-  right:48px;
-  top:230px;
-  padding:3px;
-  margin:3px;
-  background-color:#000;
-}
-.tracker-individual-container {
-  position:absolute;
-  color:white;
-  right:48px;
-  top:210px;
-  padding:0;
-  margin:0;
-}
-.tracker-individual-container li {
-  list-style:none;
-}
-.tracker-individual-container .tracker-individual-blip {
-  margin:0 3px;
-  padding:0 3px;
-  color:white;
-  text-align:center;
-  background-color:#DDD;
-}
-.tracker-individual-container .tracker-individual-blip-selected {
-  color:white;
-  font-weight:bold;
-  background-color:#000;
-}
+
 #carousel-left {
   position:absolute;
   bottom:33px;
-  left:220px;
+  left:0px;
   cursor:pointer;
+  transform: rotate(180deg);
 }
 #carousel-right {
   position:absolute;
   bottom:33px;
-  right:220px;
+  right:0px;
   cursor:pointer;
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .feedback{
     position: relative;
-    background-color: rgba(20, 133, 204, 0.6);
+    background-image: url(../images/telekom.jpg);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
     min-height: 1170px;
     z-index: 1;
 
@@ -660,7 +648,7 @@
     right: 0;
 
     bottom: 0;
-    background-image: linear-gradient(to top right, white 0%, white 50%,transparent 50%,transparent 100%);
+    background-image: linear-gradient(to top right, transparent 0%, transparent 50%,#f3f7fa 50%,#f3f7fa 100%);
 }
 
 .feedback-inner:after{
@@ -671,9 +659,50 @@
     position: absolute;
     right: 0;
     top: 0;
-    background-image: linear-gradient(to bottom right, white 0%, white 50%,transparent 50%,transparent 100%);
+    background-image: linear-gradient(to bottom right, transparent 0%, transparent 50%,#f3f7fa 50%, #f3f7fa 100%);
 }
 
+.feedback__caption{
+  width: 500px;
+  padding: 80px 35px 20px;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  box-shadow: 0 10px 19px rgba(0, 0, 40, 0.1);
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.feedback__caption p{
+  color: #4f4f4f;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 20px;
+  font-style: italic;
+
+
+}
+
+.feedback__caption h3{
+  color: #1485cc;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: right;
+}
+
+.feedback__caption:before{
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 55px;
+  left: 16px;
+  top: 30px;
+  background-color: tomato;
+
+}
 
 
 

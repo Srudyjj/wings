@@ -206,8 +206,11 @@
                       <img class="carousel-image" alt="Image Caption" src="static/images/slider1.jpg">
                     </a>
                     <div class="carousel-caption">
+                      <h3>Спортивное мероприятие для компании «Миранда-Медиа»</h3>
                       <p>
-                        This area is typically used to display captions associated with the images. They are set to hide and fade in on rotation.
+                        Корпоративное мероприятие для компании «Миранда-Медиа» (дочерняя компания "Ростелеком") в формате open air на стадионе по
+                        случаю празднования маевки с официальной сдачей норм ГТО. Множество интерактивно-развлекательных зон, программа на сцене,
+                        розыгрыш призов с корпоративной символикой.
                       </p>
                     </div>
                   </div>
@@ -216,8 +219,11 @@
                       <img class="carousel-image" alt="Image Caption" src="static/images/slider2.jpg">
                     </a>
                     <div class="carousel-caption">
+                      <h3>Спортивное мероприятие для компании «Миранда-Медиа»</h3>
                       <p>
-                        The background will expand up or down to fit the caption.
+                         Корпоративное мероприятие для компании «Миранда-Медиа» (дочерняя компания "Ростелеком") в формате open air на стадионе по
+                        случаю празднования маевки с официальной сдачей норм ГТО. Множество интерактивно-развлекательных зон, программа на сцене,
+                        розыгрыш призов с корпоративной символикой.
                       </p>
                     </div>
                   </div>
@@ -226,8 +232,11 @@
                       <img class="carousel-image" alt="Image Caption" src="static/images/slider3.jpg">
                     </a>
                     <div class="carousel-caption">
+                      <h3>Спортивное мероприятие для компании «Миранда-Медиа»</h3>
                       <p>
-                        Images can be placed here as well.
+                        Корпоративное мероприятие для компании «Миранда-Медиа» (дочерняя компания "Ростелеком") в формате open air на стадионе по
+                        случаю празднования маевки с официальной сдачей норм ГТО. Множество интерактивно-развлекательных зон, программа на сцене,
+                        розыгрыш призов с корпоративной символикой.
                       </p>
                     </div>
                   </div>
@@ -267,6 +276,11 @@
                   <h2 id="subhead_3" class="subhead">Отзывы
                     <span>Отзывы</span>
                   </h2>
+                  <div class="col-xs-12 col-md-4 feedback__caption">
+                    <p>Каждый элемент программы трех дней был ярким, интересным и качественно подготовленным. Нас приятно удивил ответственный и
+                    творческий подход Студии к подготовке проекта, искренняя забота и поддержка на каждом этапе мероприятия.</p>
+                    <h3>Черняков Е.А.</h3>
+                  </div>
                   <div class="clearfix"></div>
                   
                 </div>
@@ -319,7 +333,10 @@
   <script src="static/js/featureCarousel.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).ready(function () {
-      var carousel = $("#carousel").featureCarousel();
+      var carousel = $("#carousel").featureCarousel({
+        autoPlay: 0,
+        smallFeatureOffset: 90,
+      });
     });
   </script>
   <!-- OwlCarousel2 -->
