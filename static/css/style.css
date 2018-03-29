@@ -285,17 +285,32 @@
         position: absolute;
         display: block;
         color: #f3f7fa;
-        font-family: "Roboto - Black";
+        font-family: 'Roboto', sans-serif;
         font-size: 100px;
-        font-weight: 400;
+        font-weight: 700;
         line-height: 100px;
         text-transform: uppercase;
         z-index: -1;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        
-        
+        transform: translate(-50%, -50%); 
+        padding-left: 70px;   
+    }
+
+    .subhead span:before{
+        position: absolute;
+        left: -12px;
+        bottom: 50%;
+        content: "01";
+        color: #f5f8fb;
+        font-family: 'Roboto', sans-serif;
+        font-size: 90px;
+        font-weight: 300;
+        line-height: 70px;
+        text-transform: uppercase;
+        letter-spacing: -1.8px;
+        transform: translateY(50%) rotate(-90deg);
+        display: block;
     }
 
     .philosophy{
@@ -359,24 +374,39 @@
         left: 10px;
         width: 106px;
         height: 88px;
-        background-color: tomato;
+        background-image: url(../images/sprite.png);
     }
+
+    .philosophy-row:nth-child(2) .legend:before{
+        background-position: -212px 0px;
+        width: 84px;
+    }
+
+    .philosophy-row:nth-child(3) .legend:before{
+        background-position: -105px 0px;
+    }
+
+    .philosophy-row:nth-child(4) .legend:before{
+        background-position: 3px 0px;
+    }
+
+
 
 
     .event{
         position: relative;
-        /* width: 280px; */
         margin-bottom: 44px;
     }
 
     .event:before{
-
         content: "";
         display: block;
         border-left: 159px solid #1485cc;
         border-top: 92px solid transparent;
         border-bottom: 92px solid transparent;
     }
+
+
 
     #teambuilding:before{
         border-left: 159px solid #f3f7fa;
@@ -388,11 +418,43 @@
         display: block;
         width: 60px;
         height: 44px;
-        background-color: tomato;
         top: 50%;
         margin-top: -22px;
-        left: 23px;
+        left: 35px;
 
+    }
+
+    .event:nth-child(1)::after{
+        background-image: url(../images/sprite.png);
+        background-position: -296px -3px;
+        width: 55px;
+        height: 48px;
+    }
+
+    .event:nth-child(2)::after{
+        background-image: url(../images/sprite.png);
+        background-position: -352px -3px;
+        height: 60px;
+    }
+
+    .event:nth-child(3)::after{
+        background-image: url(../images/sprite.png);
+        background-position: -412px -2px;
+        height: 60px;
+    }
+
+    .event:nth-child(4)::after{
+        background-image: url(../images/sprite.png);
+        background-position: -473px -3px;
+        width: 67px;
+        height: 56px;
+    }
+
+    .event:nth-child(5)::after{
+        background-image: url(../images/sprite.png);
+        background-position: -540px -3px;
+        width: 65px;
+        height: 58px;
     }
 
 
@@ -413,12 +475,35 @@
         position: absolute;
         content: "";
         display: block;
-        width: 60px;
-        height: 44px;
-        background-color: tomato;
         top: -13px;
         left: 0;
-        
+        color: #e8eff6;
+        font-family:'Roboto', sans-serif;
+        font-size: 60px;
+        font-weight: 200;
+        line-height: 49px;
+        text-transform: uppercase;
+        letter-spacing: -0.6px;
+    }
+
+    .event:nth-child(1) p:before{
+        content: "01";
+    }
+
+    .event:nth-child(2) p:before{
+        content: "02";
+    }
+
+    .event:nth-child(3) p:before{
+        content: "03";
+    }
+
+    .event:nth-child(4) p:before{
+        content: "04";
+    }
+
+    .event:nth-child(5) p:before{
+        content: "05";
     }
 
     .details{
@@ -723,8 +808,17 @@
       width: 55px;
       left: 16px;
       top: 30px;
-      background-color: tomato;
+      background-image: url(../images/sprite.png);
+      background-position: -640px -3px;
 
+    }
+
+    #subhead_2 span:before{
+        content: "02";
+    }
+
+    #subhead_3 span:before{
+        content: "03";
     }
 
     #subhead_4{
@@ -733,10 +827,21 @@
         margin-bottom: 50px;
     }
 
+    #subhead_4 span:before{
+        content: "04";
+    }
+
     #subhead_5{
         margin-top: 200px;
     }
 
+    #subhead_5 span:before{
+        content: "05";
+    }
+
+    #subhead_6 span:before{
+        content: "06";
+    }
 
     #subhead_7{
         z-index: 10;
@@ -744,10 +849,18 @@
         margin-bottom: 0;
     }
 
+    #subhead_7 span:before{
+        content: "07";
+    }
+
     #subhead_8{
         z-index: 10;
         margin-top: -100px;
         margin-bottom: 110px;
+    }
+
+    #subhead_8 span:before{
+        content: "08";
     }
 
     .details-second{
