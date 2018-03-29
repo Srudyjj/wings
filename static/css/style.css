@@ -35,6 +35,12 @@
 
 
 /* My styles */
+
+    .relative{
+        position: relative;
+    }
+
+
     .menu{
         border:none;
         height: 100px;
@@ -89,7 +95,7 @@
     }
 
     .hidder{
-        overflow: hidden;
+        overflow: hidden !important;
     }
 
     .slider-arrow-left{
@@ -553,7 +559,7 @@
 
     .carousel-feature .carousel-caption {
       position:absolute;
-      bottom: -190px;
+      bottom: -210px;
       left: -310px;
       text-align: left;
     }
@@ -607,7 +613,7 @@
         height:100%;
         position: absolute;
         top: -50%;
-        background-image: linear-gradient(-20deg, transparent 0%,transparent 49%, #f3f7fa 49%,#f3f7fa 50%,transparent 50%,transparent 100%);
+        background-image: linear-gradient(-12deg, transparent 0%,transparent 49%, #f3f7fa 49%,#f3f7fa 50%,transparent 50%,transparent 100%);
         z-index: 10;
 
 
@@ -853,6 +859,7 @@
 
     .contacts-inner{
         display: block;
+        z-index: 3;
 
     }
 
@@ -877,6 +884,92 @@
         font-weight: 900;
         margin-top: 15px;
     }
+
+    .fun{
+        position: absolute;
+        top:1660px;
+        left: 0;
+        height: 628px;
+        width: 268px;
+        background-image: url(../images/sprite.png);
+        background-position: 0px -176px;
+        display: block;
+    }
+
+
+    .chicly{
+        position: absolute;
+        top: 2420px;
+        right: 8px;
+        width: 441px;
+        height: 510px;
+        transform: rotate(73deg);
+        background-image: url(../images/sprite.png);
+        background-position: 444px -90px;
+        display: block;
+        z-index: 5;
+        /* background-color: #4f4f4f; */
+
+    }
+
+    .fun1{
+        position: absolute;
+        top: 3165px;
+        right: -75px;
+        height: 345px;
+        width: 737px;
+        transform: rotate(14deg);
+        background-image: url(../images/sprite.png);
+        background-position: -292px -703px;
+        display: block;
+        z-index: 5;
+        /* background-color: #4f4f4f; */
+    }
+
+    .fun2{
+        position: absolute;
+        top: 4560px;
+        right: 0;
+        height: 628px;
+        width: 268px;
+        transform: rotate(180deg);
+        background-image: url(../images/sprite.png);
+        background-position: 0 -174px;
+        display: block;
+        z-index: 1;
+        /* background-color: #4f4f4f; */
+
+    }
+
+    .chicly1{
+        position: absolute;
+        top:5840px;
+        left: 0px;
+        width: 250px;
+        height: 457px;
+        background-image: url(../images/sprite.png);
+        background-position: 750px -238px;
+        display: block;
+        z-index: 1;
+        /* background-color: #4f4f4f; */
+
+    }
+
+    .chicly2{
+        position: absolute;
+        bottom: 90px;
+        left: -100px;
+        width: 245px;
+        height: 298px;
+        transform:scaleX(-1)  rotate(-67deg);
+        background-image: url(../images/sprite.png);
+        background-position: 280px -165px;
+        display: block;
+        z-index: 0;
+        /* background-color: #4f4f4f; */
+
+    }
+
 
     
 
