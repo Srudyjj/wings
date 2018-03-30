@@ -1131,6 +1131,10 @@
 
 @media screen and (max-width: 450px) {
 
+    .navbar-nav {
+        margin: 7.5px 15px;
+    }
+
     .legend{
         padding-left: 15px;
 
