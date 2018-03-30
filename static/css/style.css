@@ -691,6 +691,31 @@
         z-index: 20;
     }
 
+    .no-carousel h3{
+      
+      color: #1485cc;
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+     .no-carousel p {
+      margin:0;
+      padding:5px;
+      color: #4f4f4f;
+      font-family: "Roboto";
+      font-size: 16px;
+      font-weight: 200;
+      line-height: 20px;
+      font-style: italic;
+    }
+
+    .no-carousel div, .no-carousel img{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
     .line:before{
         content: "";
         display: block;
@@ -1088,7 +1113,7 @@
 
 /* //////////////////////////////////////// */
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 768px) {
     .philosophy-row{
     display: flex;
     justify-content:center;
@@ -1105,24 +1130,70 @@
 
 
 @media screen and (max-width: 450px) {
-    .legend:before{
-    display: none;
+
+    .legend{
+        padding-left: 15px;
+
     }
-    .subhead span{
-        display: none;       
+
+    .legend:before{
+        display: none;
+        
     }
 }
 
 @media screen and (max-width: 1050px){
     .details{
         min-height: initial;
-    background-image: linear-gradient(to top,rgba(20, 133, 204, 0.6), white);
+        background-image: linear-gradient(to top,rgba(20, 133, 204, 0.6), white);
    }
+
+   .subhead span{
+        display: none;       
+    }
 
 
     .details:before, .details:after{
         display: none;
     }
+}
+
+
+@media screen and (max-width: 1200px){
+    #subhead_4{
+        /* z-index: 10; */
+        margin-top: 100px;
+        margin-bottom: 95px;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .feedback:before, .feedback:after{
+
+        display: none;
+    }
+
+    .feedback{
+        background-size: cover;
+        background-position: center;
+    }
+
+    .feedback-inner{
+        display: none;
+    }
+
+    .feedback__caption{
+        width: auto;
+    }
+
+    #subhead_8{
+        z-index: 10;
+        margin-top: 100px;
+        margin-bottom: 110px;
+    }
+
 }
 
 
